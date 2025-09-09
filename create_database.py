@@ -17,6 +17,7 @@ load_dotenv()
 # your .env file.
 openai.api_key = os.environ['OPENAI_API_KEY']
 
+
 CHROMA_PATH = "chroma"
 DATA_PATH = "data/books"
 
@@ -63,7 +64,7 @@ def save_to_chroma(chunks: list[Document]):
     db = Chroma.from_documents(
         chunks, OpenAIEmbeddings(), persist_directory=CHROMA_PATH
     )
-    db.persist()
+    # db.persist()
     print(f"Saved {len(chunks)} chunks to {CHROMA_PATH}.")
 
 
