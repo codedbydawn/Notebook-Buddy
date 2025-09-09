@@ -1,10 +1,29 @@
-python-dotenv# For reading environment variables stored in .env file
-langchain
-langchain-community
-langchain-openai# For embeddings
-unstructured# Document loading
-chromadb# Vector storage
-openai# For embeddings
-tiktoken# For embeddings 
+# For reading environment variables stored in .env file
+python-dotenv==1.0.1
 
-# install markdown depenendies with: `pip install "unstructured[md]"` after install the requirements file.
+# LangChain core
+langchain==0.3.27
+
+# Langchain chroma
+langchain-chroma==0.2.5
+
+# LangChain community modules
+langchain-community==0.3.27
+
+# LangChain OpenAI integrations / embeddings
+langchain-openai==0.3.27
+
+# Document loading
+unstructured==0.18.9
+
+# Vector storage
+chromadb==1.0.20
+
+# OpenAI embeddings
+openai==1.106.1
+
+# Tokenizer for embeddings
+tiktoken==0.11.0
+
+# Note: install markdown dependencies separately with:
+# pip install "unstructured[md]"
